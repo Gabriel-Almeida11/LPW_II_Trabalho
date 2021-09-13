@@ -58,7 +58,8 @@ function Home() {
       className="select"
       name="Periodo"
       value={periodo}
-      onChange={(event)=> setPeriodo(event.target.value)}>
+      onChange={(event)=> setPeriodo(event.target.value)}
+      required>
 
         <option selected disabled value="">Selecione o Período</option>
         <option value ="1º Período">1º Período</option>
@@ -78,15 +79,17 @@ function Home() {
           placeholder="Digite sua disciplina"
           value={disciplina}
           onChange={(event) => setDisciplina(event.target.value)}
+          required
      />
 
       <select
       className="select"
       name="professor"
       value={professor}
-      onChange={(event)=> setProfessor(event.target.value)}>
+      onChange={(event)=> setProfessor(event.target.value)}
+      required>
 
-        <option selected disabled value="">Selecione o Professor</option>
+        <option selected disabled value="">Selecione o Professor(a)</option>
         <option value ="Marcio">Marcio</option>
         <option value ="Luiz">Luiz</option>
         <option value ="Marcelo">Marcelo</option>
@@ -94,7 +97,7 @@ function Home() {
         <option value ="Helena">Helena</option>
         <option value ="Maria">Maria</option>
         <option value ="José">José</option>
-
+    
       </select>
 
       <input
@@ -103,7 +106,8 @@ function Home() {
           placeholder="Digite sua Carga Horária"
           value={cargaH}
           onChange={(event) => setCargaH(event.target.value)}
-     />
+          required
+      />
 
 
 
